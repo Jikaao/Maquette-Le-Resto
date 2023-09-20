@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Allura";
+  src: url(/assets/fonts/Allura-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Light.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: Roboto, serif;
+  max-width: 4000px;
+  margin: 0 auto;
+}
+
+main {
+  background-color: #21201e;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  max-width: 1500px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .nav-logo h2 {
+  font-family: Allura, serif;
+  font-size: 2.8rem;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+nav .nav-logo h2:hover {
+  color: rgb(165, 115, 69);
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  width: 70%;
+  font-size: 0.9rem;
+}
+nav ul li {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: rgb(165, 115, 69);
+}
+nav .nav-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-transform: uppercase;
+  width: 10%;
+}
+nav .nav-icons i {
+  font-size: 1.1rem;
+  color: white;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+nav .nav-icons i:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: rgb(165, 115, 69);
+}
+
+header {
+  height: 100vh;
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+header .header-container {
+  padding: 0 0 90px;
+}
+header .header-container h2 {
+  font-size: 3.8rem;
+  color: rgb(165, 115, 69);
+  font-family: Allura, serif;
+  font-weight: 100;
+}
+header .header-container h1 {
+  text-transform: uppercase;
+  font-size: 4.1rem;
+  letter-spacing: 10px;
+  font-family: Poppins, serif;
+  line-height: 35px;
+}
+header .header-container img {
+  margin: 55px 0 40px;
+  height: 35px;
+}
+header .header-container p {
+  letter-spacing: 8px;
+  font-family: Roboto, serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}/*# sourceMappingURL=index.css.map */

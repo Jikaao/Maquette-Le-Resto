@@ -1,0 +1,34 @@
+header {
+    height: 100vh;
+    background: url(/assets/img/bg-slider-06.jpg) center/cover;
+    @include center;
+    color: $white1;
+
+    .header-container {
+        padding: 0 0 90px ;
+    h2 {
+        font-size: 3.8rem;
+        color: $color1;
+        font-family: $font1;
+        font-weight: 100;
+    }
+    h1 {
+        text-transform: uppercase;
+        font-size: 4.1rem;
+        letter-spacing: 10px;
+        font-family: $font2;
+        line-height: 35px;
+    }
+    img {
+        margin: 55px 0 40px;
+        height: 35px;
+    }
+    p {
+        letter-spacing: 8px;
+        font-family: $font3;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+}
+}
