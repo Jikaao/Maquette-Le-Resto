@@ -1,0 +1,137 @@
+main {
+    h3 {
+        font-family: $font1;
+        color: $color1;
+        font-size: 3.7rem;
+        font-weight: 100;
+        line-height: 20px;
+    }
+    img {
+      height: 50px;
+      margin: 45px auto;
+    }
+  .section1 {
+    display: flex;
+    min-height: 650px;
+    width: 100%;
+    h2 {
+      text-transform: uppercase;
+      font-family: $font2;
+      font-size: 2.1rem;
+    }
+    .S1-left {
+      background-color: $white2;
+      padding: 20px;
+      max-width: 50%;
+      .S1-left-container {
+        height: 100%;
+        border: dashed 1px $color1;
+        padding: 70px 55px 40px;
+
+        p {
+          font-size: 1.3rem;
+        }
+
+        img:nth-of-type(2) {
+          height: 115px;
+          border-radius: 100px;
+          margin: 40px 0 5px;
+        }
+        h4 {
+          font-family: $font2;
+          font-weight: 100;
+          font-size: 1.5rem;
+        }
+        p:nth-of-type(2) {
+          font-family: $font3;
+          color: $gray1;
+          font-size: 1.1rem;
+          font-weight: bold;
+          line-height: 15px;
+        }
+      }
+    }
+    .S1-right {
+      width: 50%;
+      .S1-right-img {
+        background: url(/assets/img/store-01.jpg) center/cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .section2 {
+    min-height: 1000px;
+    position: relative;
+    .S2-top {
+        min-height: 485px;
+    }
+    .S2-middle {
+        position: absolute;
+        width: 50%;
+        top: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        ul {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0 40px ;
+            li {
+                color: $white2;
+                font-size: 1.3rem;
+                position: relative;
+                cursor: pointer;
+                &:hover {
+                    color: $color1;
+                  }
+                &:after {
+                    content: "";
+                    height: 1px;
+                    background: $white2;
+                    width: 100%;
+                    position: absolute;
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        .menu {
+            background-color: $white2;
+            border-top: 5px solid $color1;
+            min-height: 1000px;
+            display: flex;
+            .menu-column1 {
+                width: 50%;
+            }
+            .menu-column2 {
+                width: 50%;
+            }
+            .menu-plat {
+                display: flex;
+                align-items: center;
+                text-align: start;
+                height: 25%;
+                width: 90%;
+                margin: 0 auto;
+                border-bottom: 1px dashed $gray1;
+                &:nth-child(4) {
+                    border-bottom: none;
+                }
+                img {
+                    margin: 0;
+                    height: 150px;
+                    border-radius: 150px;
+                }
+            }
+        }
+    }
+    .S2-bottom {
+        background: url(/assets/img/bg-menu-01.jpg) center/cover;
+        min-height: 1000px;
+        width: 100%;
+    }
+  }
+}

@@ -20,6 +20,7 @@ $white1: white;
 $white2: #eeeeee;
 $black1: black;
 $black2: #21201e;
+$gray1: #a9a69e;
 
 @mixin center {
     display: flex;
@@ -43,7 +44,6 @@ body {
 main {
     background-color: $black2;
 }
-
 li {
     list-style: none;
 }
