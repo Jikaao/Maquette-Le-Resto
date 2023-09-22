@@ -1,20 +1,20 @@
 header {
-    height: 100vh;
-    background: url(/assets/img/bg-slider-06.jpg) center/cover;
-    @include center;
-    color: $white1;
-    .header-container {
-        transform: translateY(+20%);
-        opacity: 0;
-        animation: HeaderAnim 2s forwards;
+  height: 100vh;
+  background: url(/assets/img/bg-slider-06.jpg) center/cover;
+  @include center;
+  color: $white1;
+  .header-container {
+    transform: translateY(+20%);
+    opacity: 0;
+    animation: HeaderAnim 2s forwards;
 
-        @keyframes HeaderAnim {
-          to {
-            transform: translateY(-33%);
-            opacity: 1;
-          }
-        }
-        
+    @keyframes HeaderAnim {
+      to {
+        transform: translateY(-33%);
+        opacity: 1;
+      }
+    }
+
     h2 {
       font-size: 4.5rem;
       color: $color1;
@@ -28,7 +28,6 @@ header {
       letter-spacing: 10px;
       font-family: $font2;
       line-height: 35px;
-
     }
     img {
       margin: 60px 0 45px;
@@ -42,5 +41,4 @@ header {
       font-weight: 200;
     }
   }
-
 }

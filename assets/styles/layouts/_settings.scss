@@ -1,21 +1,21 @@
 @font-face {
-    font-family: "Allura";
-    src: url(/assets/fonts/Allura-Regular.ttf);
+  font-family: "Allura";
+  src: url(/assets/fonts/Allura-Regular.ttf);
 }
 @font-face {
-    font-family: "Poppins";
-    src: url(/assets/fonts/Poppins-Medium.ttf);
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins-Medium.ttf);
 }
 @font-face {
-    font-family: "Roboto";
-    src: url(/assets/fonts/Roboto-Light.ttf);
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Light.ttf);
 }
 
 $font1: Allura, serif;
 $font2: Poppins, serif;
 $font3: Roboto, serif;
 
-$color1: rgb(165, 115, 69);;
+$color1: rgb(165, 115, 69);
 $white1: white;
 $white2: #eeeeee;
 $black1: black;
@@ -23,27 +23,27 @@ $black2: #21201e;
 $gray1: #a9a69e;
 
 @mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    text-align: center;
-    font-family: $font3;
-    max-width: 4000px;
-    margin: 0 auto;
+  text-align: center;
+  font-family: $font3;
+  max-width: 4000px;
+  margin: 0 auto;
 }
 
 main {
-    background-color: $black2;
+  background-color: $black2;
 }
 li {
-    list-style: none;
+  list-style: none;
 }

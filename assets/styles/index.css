@@ -257,7 +257,7 @@ main .section1 .S1-right .S1-right-img {
   height: 100%;
 }
 main .section2 {
-  min-height: 1000px;
+  min-height: 100px;
   position: relative;
 }
 main .section2 .S2-top {
@@ -265,7 +265,7 @@ main .section2 .S2-top {
 }
 main .section2 .S2-middle {
   position: absolute;
-  width: 50%;
+  width: 55%;
   top: 8%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -284,11 +284,13 @@ main .section2 .S2-middle ul li {
   font-size: 1.3rem;
   position: relative;
   cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 main .section2 .S2-middle ul li:hover {
   color: rgb(165, 115, 69);
 }
-main .section2 .S2-middle ul li:after {
+main .section2 .S2-middle ul li::after {
   content: "";
   height: 1px;
   background: #eeeeee;
@@ -299,10 +301,13 @@ main .section2 .S2-middle ul li:after {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+main .section2 .S2-middle ul li:hover::after {
+  background: rgb(165, 115, 69);
+}
 main .section2 .S2-middle .menu {
   background-color: #eeeeee;
   border-top: 5px solid rgb(165, 115, 69);
-  min-height: 1000px;
+  min-height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -325,17 +330,127 @@ main .section2 .S2-middle .menu .menu-plat {
   width: 90%;
   margin: 0 auto;
   border-bottom: 1px dashed #a9a69e;
+  position: relative;
 }
 main .section2 .S2-middle .menu .menu-plat:nth-child(4) {
   border-bottom: none;
 }
 main .section2 .S2-middle .menu .menu-plat img {
   margin: 0;
-  height: 150px;
+  height: 130px;
   border-radius: 150px;
+}
+main .section2 .S2-middle .menu .menu-plat .nom-du-plat {
+  padding: 0 55px 0 10px;
+}
+main .section2 .S2-middle .menu .menu-plat .nom-du-plat h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+main .section2 .S2-middle .menu .menu-plat .nom-du-plat p {
+  font-size: 1.3rem;
+  margin: 5px 0 0;
+}
+main .section2 .S2-middle .menu .menu-plat span {
+  color: rgb(165, 115, 69);
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
 }
 main .section2 .S2-bottom {
   background: url(/assets/img/bg-menu-01.jpg) center/cover;
-  min-height: 1000px;
+  min-height: 900px;
   width: 100%;
+}
+main .section3 .S3-content {
+  width: 70%;
+  min-height: 500px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+main .section3 .S3-content .S3-left {
+  padding: 30px;
+  background: black;
+}
+main .section3 .S3-content .S3-left .S3-left-container {
+  border: 1px dashed #eeeeee;
+  padding: 40px 0;
+  height: 100%;
+}
+main .section3 .S3-content .S3-left .S3-left-container h3 {
+  font-size: 2.8rem;
+  line-height: 20px;
+}
+main .section3 .S3-content .S3-left .S3-left-container h2 {
+  color: white;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: Poppins, serif;
+}
+main .section3 .S3-content .S3-left .S3-left-container img {
+  height: 40px;
+}
+main .section3 .S3-content .S3-left .S3-left-container h4 {
+  color: rgb(165, 115, 69);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main .section3 .S3-content .S3-left .S3-left-container p {
+  color: #eeeeee;
+  margin: 15px 0 45px;
+}
+main .section3 .S3-content .S3-right {
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .section3 .S3-content .S3-right h3 {
+  font-size: 3.2rem;
+}
+main .section3 .S3-content .S3-right h4 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: Poppins, serif;
+}
+main .section3 .S3-content .S3-right img {
+  height: 35px;
+  margin: 25px 0 0;
+}
+main .section3 .S3-content .S3-right .button-reservation {
+  display: grid;
+  margin: 35px 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+main .section3 .S3-content .S3-right input,
+main .section3 .S3-content .S3-right select {
+  margin: 15px;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 1px solid #a9a69e;
+  font-size: 1rem;
+  background: none;
+  outline: none;
+}
+main .section3 .S3-content .S3-right button {
+  padding: 15px 40px;
+  background: black;
+  color: #eeeeee;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: Poppins, serif;
 }/*# sourceMappingURL=index.css.map */

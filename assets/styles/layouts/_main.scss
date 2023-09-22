@@ -1,15 +1,15 @@
 main {
-    h3 {
-        font-family: $font1;
-        color: $color1;
-        font-size: 3.7rem;
-        font-weight: 100;
-        line-height: 20px;
-    }
-    img {
-      height: 50px;
-      margin: 45px auto;
-    }
+  h3 {
+    font-family: $font1;
+    color: $color1;
+    font-size: 3.7rem;
+    font-weight: 100;
+    line-height: 20px;
+  }
+  img {
+    height: 50px;
+    margin: 45px auto;
+  }
   .section1 {
     display: flex;
     min-height: 650px;
@@ -62,76 +62,185 @@ main {
   }
 
   .section2 {
-    min-height: 1000px;
+    min-height: 100px;
     position: relative;
     .S2-top {
-        min-height: 485px;
+      min-height: 485px;
     }
     .S2-middle {
-        position: absolute;
-        width: 50%;
-        top: 8%;
-        left: 50%;
-        transform: translateX(-50%);
-        ul {
-            display: flex;
-            justify-content: space-around;
-            margin: 10px 0 40px ;
-            li {
-                color: $white2;
-                font-size: 1.3rem;
-                position: relative;
-                cursor: pointer;
-                &:hover {
-                    color: $color1;
-                  }
-                &:after {
-                    content: "";
-                    height: 1px;
-                    background: $white2;
-                    width: 100%;
-                    position: absolute;
-                    bottom: -10px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-            }
+      position: absolute;
+      width: 55%;
+      top: 8%;
+      left: 50%;
+      transform: translateX(-50%);
+      ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0 40px;
+        li {
+          color: $white2;
+          font-size: 1.3rem;
+          position: relative;
+          cursor: pointer;
+          transition: 0.2s ease;
+          &:hover {
+            color: $color1;
+          }
+          &::after {
+            content: "";
+            height: 1px;
+            background: $white2;
+            width: 100%;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          &:hover::after{
+            background: $color1;
+          }
         }
+      }
 
-        .menu {
-            background-color: $white2;
-            border-top: 5px solid $color1;
-            min-height: 1000px;
-            display: flex;
-            .menu-column1 {
-                width: 50%;
-            }
-            .menu-column2 {
-                width: 50%;
-            }
-            .menu-plat {
-                display: flex;
-                align-items: center;
-                text-align: start;
-                height: 25%;
-                width: 90%;
-                margin: 0 auto;
-                border-bottom: 1px dashed $gray1;
-                &:nth-child(4) {
-                    border-bottom: none;
-                }
-                img {
-                    margin: 0;
-                    height: 150px;
-                    border-radius: 150px;
-                }
-            }
+      .menu {
+        background-color: $white2;
+        border-top: 5px solid $color1;
+        min-height: 900px;
+        display: flex;
+        .menu-column1 {
+          width: 50%;
         }
+        .menu-column2 {
+          width: 50%;
+        }
+        .menu-plat {
+          display: flex;
+          align-items: center;
+          text-align: start;
+          height: 25%;
+          width: 90%;
+          margin: 0 auto;
+          border-bottom: 1px dashed $gray1;
+          position: relative;
+          &:nth-child(4) {
+            border-bottom: none;
+          }
+          img {
+            margin: 0;
+            height: 130px;
+            border-radius: 150px;
+          }
+          .nom-du-plat {
+            padding: 0 55px 0 10px;
+            h5 {
+              font-size: 1rem;
+              text-transform: uppercase;
+            }
+            p {
+              font-size: 1.3rem;
+              margin: 5px 0 0;
+            }
+          }
+          span {
+            color: $color1;
+            font-size: 1.3rem;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
     }
     .S2-bottom {
-        background: url(/assets/img/bg-menu-01.jpg) center/cover;
-        min-height: 1000px;
-        width: 100%;
+      background: url(/assets/img/bg-menu-01.jpg) center/cover;
+      min-height: 900px;
+      width: 100%;
+    }
+  }
+  .section3 {
+    .S3-content {
+      width: 70%;
+      min-height: 500px;
+      margin: 100px auto;
+      display: grid;
+      grid-template-columns: 30% 70%;
+      .S3-left {
+        padding: 30px;
+        background: $black1;
+        .S3-left-container {
+          border: 1px dashed $white2;
+          padding: 40px 0;
+          height: 100%;
+          h3 {
+            font-size: 2.8rem;
+            line-height: 20px;
+          }
+          h2 {
+            color: $white1;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: $font2;
+          }
+          img {
+            height: 40px;
+          }
+          h4 {
+            color: $color1;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+          }
+          p {
+            color: $white2;
+            margin: 15px 0 45px;
+          }
+        }
+      }
+      .S3-right {
+        background: $white2;
+        @include center;
+        h3 {
+          font-size: 3.2rem;
+        }
+        h4 {
+          text-transform: uppercase;
+          font-size: 2rem;
+          font-family: $font2;
+        }
+        img {
+          height: 35px;
+          margin: 25px 0 0;
+        }
+        .button-reservation {
+          display: grid;
+          margin: 35px 0;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        input,
+        select {
+          margin: 15px;
+          padding: 15px 0;
+          border: none;
+          border-bottom: 1px solid $gray1;
+          font-size: 1rem;
+          background: none;
+          outline: none;
+          
+        }
+        button {
+          padding: 15px 40px;
+          background: $black1;
+          color: $white2;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 4px;
+          margin-top: 10px;
+          border-radius: 50px;
+          cursor: pointer;
+          font-family: $font2;
+        }
+      }
     }
   }
 }
