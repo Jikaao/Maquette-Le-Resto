@@ -28,6 +28,11 @@ main {
   background-color: #21201e;
 }
 
+h4 {
+  text-transform: uppercase;
+  font-family: Poppins, serif;
+}
+
 li {
   list-style: none;
 }
@@ -237,7 +242,6 @@ main .section1 .S1-left .S1-left-container img:nth-of-type(2) {
   margin: 40px 0 5px;
 }
 main .section1 .S1-left .S1-left-container h4 {
-  font-family: Poppins, serif;
   font-weight: 100;
   font-size: 1.5rem;
 }
@@ -419,9 +423,7 @@ main .section3 .S3-content .S3-right h3 {
   font-size: 3.2rem;
 }
 main .section3 .S3-content .S3-right h4 {
-  text-transform: uppercase;
   font-size: 2rem;
-  font-family: Poppins, serif;
 }
 main .section3 .S3-content .S3-right img {
   height: 35px;
@@ -453,4 +455,87 @@ main .section3 .S3-content .S3-right button {
   border-radius: 50px;
   cursor: pointer;
   font-family: Poppins, serif;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+main .section3 .S3-content .S3-right button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+main .Section4 .S4-content {
+  width: 60%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+main .Section4 .S4-content h4 {
+  font-size: 2rem;
+  color: white;
+}
+main .Section4 .S4-content .buy-tickets {
+  display: grid;
+  text-align: start;
+  grid-template-columns: 68% 32%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a b" "c b";
+}
+main .Section4 .S4-content .buy-tickets .ticket-date {
+  background: #21201e;
+  color: white;
+  height: 86px;
+  width: 86px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 22px;
+}
+main .Section4 .S4-content .buy-tickets .ticket-date h6 {
+  font-size: 1.7rem;
+}
+main .Section4 .S4-content .buy-tickets .ticket-container h5 {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-left: 8px;
+}
+main .Section4 .S4-content .buy-tickets .ticket-container p {
+  color: #a9a69e;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+main .Section4 .S4-content .buy-tickets .ticket1 {
+  grid-area: a;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+main .Section4 .S4-content .buy-tickets .ticket1 .ticket-left {
+  background: url(/assets/img/event-01.jpg) center/cover;
+}
+main .Section4 .S4-content .buy-tickets .ticket2 {
+  grid-area: c;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+main .Section4 .S4-content .buy-tickets .ticket2 .ticket-left {
+  background: url(/assets/img/event-02.jpg) center/cover;
+}
+main .Section4 .S4-content .buy-tickets .ticket-right {
+  background: #eeeeee;
+  padding: 20px;
+}
+main .Section4 .S4-content .buy-tickets .ticket3 {
+  grid-area: b;
+  background: url(/assets/img/event-03.jpg) center/cover;
+  padding: 20px;
+}
+main .Section4 .S4-content .buy-tickets .ticket3 .ticket-content {
+  background: #eeeeee;
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */

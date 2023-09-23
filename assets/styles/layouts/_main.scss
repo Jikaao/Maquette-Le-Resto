@@ -38,7 +38,6 @@ main {
           margin: 40px 0 5px;
         }
         h4 {
-          font-family: $font2;
           font-weight: 100;
           font-size: 1.5rem;
         }
@@ -204,9 +203,7 @@ main {
           font-size: 3.2rem;
         }
         h4 {
-          text-transform: uppercase;
           font-size: 2rem;
-          font-family: $font2;
         }
         img {
           height: 35px;
@@ -239,8 +236,103 @@ main {
           border-radius: 50px;
           cursor: pointer;
           font-family: $font2;
+          transition: 0.2s;
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
+    }
+  }
+
+  .Section4 {
+    .S4-content {
+      width: 60%;
+      max-width: 1500px;
+      margin: 0 auto;
+      h4 {
+      font-size: 2rem;
+      color: $white1;
+      }
+      .buy-tickets {
+        display: grid;
+        text-align: start;
+        grid-template-columns: 68% 32%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "a b"
+        "c b";
+        gap: 20px;
+        
+
+        .ticket-date {
+          background: $black2;
+          color: $white1;
+          height: 86px;
+          width: 86px;
+          margin: 0 auto;
+          @include center ;
+          line-height: 22px;
+          h6 {
+            font-size: 1.7rem;
+          }
+        }
+        .ticket-container {
+          h5 {
+            letter-spacing: 1px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding-left: 8px;
+          }
+          p {
+            color: $gray1;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            letter-spacing: 1px ;
+          }
+          i {
+            margin-right: 3px;
+            font-size: 0.7rem;
+            transform: translateY(-2px);
+
+            &:nth-child(2) {
+              margin-left: 10px;
+            }
+          }
+        }
+        .ticket1 {
+          grid-area: a;
+          display: grid;
+          grid-template-columns: 33% 67%;
+          .ticket-left {
+          background: url(/assets/img/event-01.jpg) center/cover;
+        }
+        }
+        .ticket2 {
+          grid-area: c;
+          display: grid;
+          grid-template-columns: 33% 67%;
+          .ticket-left {
+          background: url(/assets/img/event-02.jpg) center/cover;
+        }
+        }
+        .ticket-right {
+          background: $white2;
+          padding: 20px;
+        }
+        .ticket3 {
+          grid-area: b;
+          background: url(/assets/img/event-03.jpg) center/cover;
+          padding: 20px;
+          .ticket-content {
+            background: $white2;
+            height: 100%;
+          }
+        }
+      }
+    
+      
+
     }
   }
 }
