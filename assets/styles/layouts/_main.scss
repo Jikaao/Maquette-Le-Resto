@@ -95,7 +95,7 @@ main {
             left: 50%;
             transform: translateX(-50%);
           }
-          &:hover::after{
+          &:hover::after {
             background: $color1;
           }
         }
@@ -223,7 +223,6 @@ main {
           font-size: 1rem;
           background: none;
           outline: none;
-          
         }
         button {
           padding: 15px 40px;
@@ -250,20 +249,25 @@ main {
       width: 60%;
       max-width: 1500px;
       margin: 0 auto;
+      h3 {
+        line-height: 40px;
+        font-size: 3.2rem;
+      }
       h4 {
-      font-size: 2rem;
-      color: $white1;
+        font-size: 2.3rem;
+        color: $white1;
+      }
+      img {
+        height: 45px;
       }
       .buy-tickets {
         display: grid;
         text-align: start;
-        grid-template-columns: 68% 32%;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 60% 40%;
         grid-template-areas:
-        "a b"
-        "c b";
+          "a b"
+          "c b";
         gap: 20px;
-        
 
         .ticket-date {
           background: $black2;
@@ -271,28 +275,41 @@ main {
           height: 86px;
           width: 86px;
           margin: 0 auto;
-          @include center ;
+          display: flex;
+          flex-direction: column;
+          @include center;
           line-height: 22px;
           h6 {
             font-size: 1.7rem;
           }
+          h5 {
+            font-size: 1.1rem;
+            font-weight: 100;
+          }
         }
         .ticket-container {
+          height: 80%;
           h5 {
             letter-spacing: 1px;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 500;
             padding-left: 8px;
           }
           p {
             color: $gray1;
-            font-size: 0.9rem;
-            margin-top: 20px;
-            letter-spacing: 1px ;
+            font-size: 1.1rem;
+            margin: 25px 0 40px;
+            letter-spacing: 1px;
+          }
+          h6 {
+            font-size: 1.1rem;
+            font-weight: 200;
+            letter-spacing: 2px;
+            text-transform: uppercase;
           }
           i {
             margin-right: 3px;
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             transform: translateY(-2px);
 
             &:nth-child(2) {
@@ -300,39 +317,52 @@ main {
             }
           }
         }
-        .ticket1 {
+        .t1 {
           grid-area: a;
           display: grid;
-          grid-template-columns: 33% 67%;
+          grid-template-columns: 38% 62%;
           .ticket-left {
-          background: url(/assets/img/event-01.jpg) center/cover;
+            background: url(/assets/img/event-01.jpg) center/cover;
+            @include center;
+          }
         }
-        }
-        .ticket2 {
+        .t2 {
           grid-area: c;
           display: grid;
-          grid-template-columns: 33% 67%;
+          grid-template-columns: 38% 62%;
           .ticket-left {
-          background: url(/assets/img/event-02.jpg) center/cover;
-        }
+            background: url(/assets/img/event-02.jpg) center/cover;
+            @include center;
+          }
         }
         .ticket-right {
           background: $white2;
-          padding: 20px;
+          padding: 25px 20px;
+          height: 230px;
+          align-items: center;
         }
-        .ticket3 {
+        .t3 {
           grid-area: b;
           background: url(/assets/img/event-03.jpg) center/cover;
           padding: 20px;
           .ticket-content {
             background: $white2;
             height: 100%;
+            padding: 0 30px;
+            text-align: center;
+
+            .ticket-container {
+              @include center;
+              flex-direction: column;
+              h6 {
+                margin-top: 50px;
+                left: 50%;
+              }
+            }
           }
         }
       }
-    
-      
-
     }
   }
+  
 }

@@ -467,16 +467,23 @@ main .Section4 .S4-content {
   max-width: 1500px;
   margin: 0 auto;
 }
+main .Section4 .S4-content h3 {
+  line-height: 40px;
+  font-size: 3.2rem;
+}
 main .Section4 .S4-content h4 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: white;
+}
+main .Section4 .S4-content img {
+  height: 45px;
 }
 main .Section4 .S4-content .buy-tickets {
   display: grid;
   text-align: start;
-  grid-template-columns: 68% 32%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 60% 40%;
   grid-template-areas: "a b" "c b";
+  gap: 20px;
 }
 main .Section4 .S4-content .buy-tickets .ticket-date {
   background: #21201e;
@@ -486,6 +493,11 @@ main .Section4 .S4-content .buy-tickets .ticket-date {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -498,44 +510,109 @@ main .Section4 .S4-content .buy-tickets .ticket-date {
 main .Section4 .S4-content .buy-tickets .ticket-date h6 {
   font-size: 1.7rem;
 }
+main .Section4 .S4-content .buy-tickets .ticket-date h5 {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+main .Section4 .S4-content .buy-tickets .ticket-container {
+  height: 80%;
+}
 main .Section4 .S4-content .buy-tickets .ticket-container h5 {
   letter-spacing: 1px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   padding-left: 8px;
 }
 main .Section4 .S4-content .buy-tickets .ticket-container p {
   color: #a9a69e;
-  font-size: 0.9rem;
-  margin-top: 20px;
+  font-size: 1.1rem;
+  margin: 25px 0 40px;
   letter-spacing: 1px;
 }
-main .Section4 .S4-content .buy-tickets .ticket1 {
+main .Section4 .S4-content .buy-tickets .ticket-container h6 {
+  font-size: 1.1rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+main .Section4 .S4-content .buy-tickets .ticket-container i {
+  margin-right: 3px;
+  font-size: 0.8rem;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+main .Section4 .S4-content .buy-tickets .ticket-container i:nth-child(2) {
+  margin-left: 10px;
+}
+main .Section4 .S4-content .buy-tickets .t1 {
   grid-area: a;
   display: grid;
-  grid-template-columns: 33% 67%;
+  grid-template-columns: 38% 62%;
 }
-main .Section4 .S4-content .buy-tickets .ticket1 .ticket-left {
+main .Section4 .S4-content .buy-tickets .t1 .ticket-left {
   background: url(/assets/img/event-01.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-main .Section4 .S4-content .buy-tickets .ticket2 {
+main .Section4 .S4-content .buy-tickets .t2 {
   grid-area: c;
   display: grid;
-  grid-template-columns: 33% 67%;
+  grid-template-columns: 38% 62%;
 }
-main .Section4 .S4-content .buy-tickets .ticket2 .ticket-left {
+main .Section4 .S4-content .buy-tickets .t2 .ticket-left {
   background: url(/assets/img/event-02.jpg) center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main .Section4 .S4-content .buy-tickets .ticket-right {
   background: #eeeeee;
-  padding: 20px;
+  padding: 25px 20px;
+  height: 230px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-main .Section4 .S4-content .buy-tickets .ticket3 {
+main .Section4 .S4-content .buy-tickets .t3 {
   grid-area: b;
   background: url(/assets/img/event-03.jpg) center/cover;
   padding: 20px;
 }
-main .Section4 .S4-content .buy-tickets .ticket3 .ticket-content {
+main .Section4 .S4-content .buy-tickets .t3 .ticket-content {
   background: #eeeeee;
   height: 100%;
+  padding: 0 30px;
+  text-align: center;
+}
+main .Section4 .S4-content .buy-tickets .t3 .ticket-content .ticket-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .Section4 .S4-content .buy-tickets .t3 .ticket-content .ticket-container h6 {
+  margin-top: 50px;
+  left: 50%;
 }/*# sourceMappingURL=index.css.map */
