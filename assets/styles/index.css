@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Allura";
   src: url(/assets/fonts/Allura-Regular.ttf);
@@ -463,8 +464,8 @@ main .section3 .S3-content .S3-right button:hover {
           transform: scale(1.1);
 }
 main .Section4 .S4-content {
-  width: 60%;
   max-width: 1500px;
+  width: 70%;
   margin: 0 auto;
 }
 main .Section4 .S4-content h3 {
@@ -480,10 +481,10 @@ main .Section4 .S4-content img {
 }
 main .Section4 .S4-content .buy-tickets {
   display: grid;
+  margin: 0 auto;
   text-align: start;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 62% 38%;
   grid-template-areas: "a b" "c b";
-  gap: 20px;
 }
 main .Section4 .S4-content .buy-tickets .ticket-date {
   background: #21201e;
@@ -531,7 +532,7 @@ main .Section4 .S4-content .buy-tickets .ticket-container p {
 }
 main .Section4 .S4-content .buy-tickets .ticket-container h6 {
   font-size: 1.1rem;
-  font-weight: 200;
+  font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -547,6 +548,7 @@ main .Section4 .S4-content .buy-tickets .ticket-container i:nth-child(2) {
 main .Section4 .S4-content .buy-tickets .t1 {
   grid-area: a;
   display: grid;
+  margin-bottom: 20px;
   grid-template-columns: 38% 62%;
 }
 main .Section4 .S4-content .buy-tickets .t1 .ticket-left {
@@ -590,6 +592,7 @@ main .Section4 .S4-content .buy-tickets .t3 {
   grid-area: b;
   background: url(/assets/img/event-03.jpg) center/cover;
   padding: 20px;
+  margin-left: 20px;
 }
 main .Section4 .S4-content .buy-tickets .t3 .ticket-content {
   background: #eeeeee;
@@ -615,4 +618,54 @@ main .Section4 .S4-content .buy-tickets .t3 .ticket-content .ticket-container {
 main .Section4 .S4-content .buy-tickets .t3 .ticket-content .ticket-container h6 {
   margin-top: 50px;
   left: 50%;
+}
+main .Section5 {
+  padding-top: 100px;
+}
+main .Section5 .quote-container {
+  width: 70%;
+  min-height: 200px;
+  max-width: 1500px;
+  background: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+main .Section5 .quote-container::before {
+  content: "";
+  background: url(/assets/img/avatar-02.jpg) center/cover;
+  height: 65px;
+  width: 65px;
+  border-radius: 40px;
+  position: absolute;
+  top: -35px;
+  z-index: 5;
+}
+main .Section5 .quote-container::after {
+  content: "";
+  position: absolute;
+}
+main .Section5 .quote-container .text-container {
+  width: 80%;
+  margin: 15px auto;
+}
+main .Section5 .quote-container .text-container::before {
+  content: "❝";
+  font-size: 1.2rem;
+}
+main .Section5 .quote-container .text-container::after {
+  content: "❞";
+  font-size: 1.2rem;
 }/*# sourceMappingURL=index.css.map */

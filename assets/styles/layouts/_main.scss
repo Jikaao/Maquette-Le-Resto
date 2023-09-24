@@ -246,8 +246,8 @@ main {
 
   .Section4 {
     .S4-content {
-      width: 60%;
       max-width: 1500px;
+      width: 70%;
       margin: 0 auto;
       h3 {
         line-height: 40px;
@@ -262,12 +262,12 @@ main {
       }
       .buy-tickets {
         display: grid;
+        margin: 0 auto;
         text-align: start;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 62% 38%;
         grid-template-areas:
           "a b"
           "c b";
-        gap: 20px;
 
         .ticket-date {
           background: $black2;
@@ -303,7 +303,7 @@ main {
           }
           h6 {
             font-size: 1.1rem;
-            font-weight: 200;
+            font-weight: 700;
             letter-spacing: 2px;
             text-transform: uppercase;
           }
@@ -320,6 +320,7 @@ main {
         .t1 {
           grid-area: a;
           display: grid;
+          margin-bottom: 20px;
           grid-template-columns: 38% 62%;
           .ticket-left {
             background: url(/assets/img/event-01.jpg) center/cover;
@@ -345,6 +346,7 @@ main {
           grid-area: b;
           background: url(/assets/img/event-03.jpg) center/cover;
           padding: 20px;
+          margin-left: 20px;
           .ticket-content {
             background: $white2;
             height: 100%;
@@ -364,5 +366,43 @@ main {
       }
     }
   }
-  
+  .Section5 {
+    padding-top: 100px;
+    .quote-container {
+      width: 70%;
+      min-height: 200px;
+      max-width: 1500px;
+      background: $white2;
+      @include center;
+      flex-direction: column;
+      margin: 0 auto;
+      position: relative;
+      &::before {
+        content: "";
+        background: url(/assets/img/avatar-02.jpg) center/cover;
+        height: 65px;
+        width: 65px;
+        border-radius: 40px;
+        position: absolute;
+        top: -35px;
+        z-index: 5;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+      }
+      .text-container {
+        width: 80%;
+        margin: 15px auto;
+        &::before {
+          content: "❝";
+          font-size: 1.2rem;
+        }
+        &::after {
+          content: "❞";
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 }
