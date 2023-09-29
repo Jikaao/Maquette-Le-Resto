@@ -377,6 +377,13 @@ main {
       flex-direction: column;
       margin: 0 auto;
       position: relative;
+      h2 {
+        font-weight: 100;
+      }
+      p {
+        color: $color1;
+        margin: 15px 0 35px;
+      }
       &::before {
         content: "";
         background: url(/assets/img/avatar-02.jpg) center/cover;
@@ -393,14 +400,19 @@ main {
       }
       .text-container {
         width: 80%;
-        margin: 15px auto;
-        &::before {
-          content: "❝";
-          font-size: 1.2rem;
-        }
-        &::after {
-          content: "❞";
-          font-size: 1.2rem;
+        margin: 50px auto 0;
+        p{
+          color: $black1;
+          line-height: 35px;
+          font-size: 1.1rem;
+          &::before {
+            content: "❝";
+            font-size: 1.2rem;
+          }
+          &::after {
+            content: "❞";
+            font-size: 1.2rem;
+          }
         }
       }
     }
